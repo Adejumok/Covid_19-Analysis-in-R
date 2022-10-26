@@ -1,0 +1,37 @@
+---
+title: "covid"
+author: "Jummie"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+covid.data <- read.csv("~/R/archive/covid-data.csv")
+   View(covid.data)
+summary(covid.data)   
+```
+```{r}
+covid.data$new_cases_dummy <- as.integer(covid.data$new_cases != 0)
+#Rate of New Cases
+sum(covid.data$new_cases_dummy, na.rm = T)/ nrow(covid.data)
+
+covid.data$total_cases_dummy <- as.integer(covid.data$total_cases != 0)
+#Rate of Total Cases
+sum(covid.data$total_cases_dummy, na.rm = T)/ nrow(covid.data)
+```
+```{r}
+#Is there an impact of covid on Country's gdp?
+#Using scatter plot
+plot_ <- ggplot(covid.data, aes(x=total_cases, y=gdp_per_capita))+geom_point()+
+  labs(title = "Relationship between Total Covid Cases and the Country's GDP",
+       xlab="Total Cases", ylab="GDP")
+plot_ #From the plot, the higher the covid cases, the lesser the gdp
+#Using regression model
+ml <- lm(gdp_per_capita~total_cases, data=covid.data)
+summary(ml)#Shows covid cases has significant effect on gdp using the p-value which is less than 0.05
+
+```
