@@ -4,7 +4,7 @@ This repository contains an analysis of COVID-19 data using R programming langua
 
 ## Data
 
-The data used for the analysis is contained in the `owid-covid-data.csv` file. The file contains daily data on the number of COVID-19 cases and deaths in various countries and regions of the world. The data covers the period from January 2020 to the most recent available data.
+The data used for the analysis is contained in the `covid-data.csv` file. The file contains daily data on the number of COVID-19 cases and deaths in various countries and regions of the world. The data covers the period from January 2021 to the most recent available data.
 
 ## Analysis
 
@@ -12,7 +12,7 @@ The analysis is contained in the `covid_analysis.R` script. The script contains 
 
 1. Loading the data into R.
 2. Cleaning the data by removing missing values and selecting the columns of interest.
-3. Analyzing the trends in the number of cases and deaths globally and in specific countries.
+3. Analyzing the trends in the number of cases and rate of new cases.
 4. Creating visualizations to represent the trends and patterns in the data.
 
 ## How to Run the Analysis
