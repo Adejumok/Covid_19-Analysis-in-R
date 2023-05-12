@@ -13,7 +13,7 @@ The analysis is contained in the `covid_analysis.R` script. The script contains 
 1. Loading the data into R.
 2. Cleaning the data by removing missing values and selecting the columns of interest.
 3. Analyzing the trends in the number of cases and rate of new cases.
-4. Creating visualizations to represent the trends and patterns in the data.
+4. Creating visualizations to represent the trends and patterns in the data. Graphic display of the impact of Covid-19 on the Country's GDP, Reproduction Rate, Life Expectancy and Human Development Index.
 
 ## How to Run the Analysis
 
