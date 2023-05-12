@@ -1,6 +1,6 @@
 # COVID-19 Analysis in R
 
-This repository contains an analysis of COVID-19 data using R programming language. The analysis is based on the data obtained from the [Our World in Data](https://ourworldindata.org/) website. Analysis of covid-19 for countries and determining it effect on the economy and life span of victims.
+This repository contains an analysis of COVID-19 data using R programming language. Analysis of covid-19 for countries and determining it effect on the economy and life span of victims.
 
 ## Data
 
