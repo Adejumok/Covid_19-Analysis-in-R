@@ -24,15 +24,6 @@ To run the analysis, follow these steps:
 3. Install the necessary packages by running the following command in R: `install.packages(c("tidyverse", "ggplot2"))`
 4. Run the `covid_analysis.R` script in R.
 
-## Results
-
-The results of the analysis are presented in the `results` folder. The folder contains the following files:
-
-1. `global_cases.png`: A plot showing the trend in the number of COVID-19 cases globally.
-2. `global_deaths.png`: A plot showing the trend in the number of COVID-19 deaths globally.
-3. `country_cases.png`: A plot showing the trend in the number of COVID-19 cases in a specific country.
-4. `country_deaths.png`: A plot showing the trend in the number of COVID-19 deaths in a specific country.
-
 ## Conclusion
 
 This analysis provides insights into the trends and patterns in the spread of COVID-19 globally and in specific countries. The analysis can be useful for policymakers, healthcare professionals, and researchers in understanding the impact of the pandemic and developing strategies to mitigate its effects.
